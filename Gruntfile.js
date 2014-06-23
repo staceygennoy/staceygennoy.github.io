@@ -14,9 +14,9 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          port: 9001,
+          port: 9002,
           base: 'dist',
-          open: true
+          open: false
         }
       }
     },
@@ -36,7 +36,10 @@ module.exports = function(grunt) {
           // JQuery
           {dest: 'dist/js/', src: 'bower_components/jquery/dist/*', expand: true, flatten: true},
           // Modernizr
-          {dest: 'dist/js/', src: 'bower_components/modernizr/modernizr.js', expand: true, flatten: true}
+          {dest: 'dist/js/', src: 'bower_components/modernizr/modernizr.js', expand: true, flatten: true},
+          // Font Awesome
+          {dest: 'dist/css/', src: 'bower_components/fontawesome/css/*', expand: true, flatten: true},
+          {dest: 'dist/fonts/', src: 'bower_components/fontawesome/fonts/*', expand: true, flatten: true}
         ]
       }
     },
@@ -74,7 +77,8 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        livereload: true
+        livereload: 35730
+
       },
       html: {
         files: ['src/**/*.html'],
