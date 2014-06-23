@@ -1,9 +1,9 @@
 {
-  "name": "cepheus",
+  "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://github.com/JamesGennoy/cepheus",
+  "homepage": "https://github.com/staceygennoy/portfolio",
   "authors": [
-    "James Gennoy <james@gennoy.com>"
+    "Stacey Gennoy <hello@staceygennoy.com>"
   ],
   "license": "MIT",
   "private": true,
@@ -14,12 +14,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "jquery": "~2.1.0",
     "bootstrap": "~3.1.1",
-    "modernizr": "~2.7.2"
-  },
-  "devDependencies": {
+    "modernizr": "~2.7.2",
     "fontawesome": "~4.1.0"
   }
 }

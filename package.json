@@ -1,9 +1,9 @@
 {
-  "name": "cepheus",
+  "name": "portfolio",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JamesGennoy/cepheus"
+    "url": "https://github.com/staceygennoy/portfolio"
   },
   "devDependencies": {
     "grunt": "^0.4.2",
