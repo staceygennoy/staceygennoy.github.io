@@ -16,38 +16,40 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .lead {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .intro-header {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
+  padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 100px;
   color: #f8f8f8;
-  background: url(../img/geometry_blur2.jpg) no-repeat center center;
+  background: url(../img/aq_motion_blur.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
 }
 
-.intro-header-yield {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
-  color: #f8f8f8;
-  background: url(../img/yield/yield_texture.png) no-repeat center center;
-  background-size: cover;
-  text-align: center;
+
+p {
+  font-size: 16px;
 }
 
-.intro-header-smartshopper {
-  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
-  color: #f8f8f8;
-  background: url(../img/smartshopper/honey.jpg) no-repeat center center;
-  background-size: cover;
-  text-align: center;
-}
+
 
 /* header backgrounds */
+
+.header {
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  color: #f8f8f8;
+  background: url(../img/aq_motion_blur.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: left;
+}
+
+.smartshopper {
+  background: url(../img/smartshopper/honey.jpg) repeat center center;
+}
 
 .iretail {
   background: url(../img/iretail/header_bg.jpg) no-repeat center center;
@@ -56,6 +58,11 @@ body, h1, h2, h3, h4, h5, h6 {
 .thesis {
   background: url(../img/thesis/canyon_waterfall_01.jpg) no-repeat center center;
 
+}
+
+
+.yield {
+  background: url(../img/yield/yield_texture.png) no-repeat center center;
 }
 
 .intro-message {
@@ -133,14 +140,15 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section-a {
-  background-color: #f8f8f8;
-  padding: 50px 0;
+  background-color: #fff;
+  padding: 30px 0;
 }
 
 .content-section-b {
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
-  padding: 50px 0;
+  background-color: #f1f0f0;
+  padding: 30px 0;
 }
 
 .content-section-sub {
