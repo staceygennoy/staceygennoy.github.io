@@ -1,10 +1,15 @@
 $my-top-padding: 50px;
 $my-background-color: #DDD;
 $primary-font: 'Raleway', sans-serif;
+$primary-body: #636363; //gray
+$primary-color: #68BDBF; //teal
+$secondary-color: #428bca; // blue
+
 
 body {
     background-color: $my-background-color;
 	padding-top: $my-top-padding;
+    color: $primary-body;
 }
 
 body, html {
@@ -20,12 +25,14 @@ body, h1, h2, h3, h4, h5, h6 {
 .lead {
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .intro-header {
   padding-top: 100px; /* make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
   padding-bottom: 100px;
-  color: #f8f8f8;
+  color: #fff;
+  background-color: $primary-color;
   background: url(../img/aq_motion_blur_tone.png) no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -41,16 +48,19 @@ p {
 /* header backgrounds */
 
 .header {
-  padding-top: 100px; /* make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 100px;
+  padding-top: 80px; /* make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 80px;
   color: #f8f8f8;
-  background: url(../img/aq_motion_blur.jpg) no-repeat center center;
   background-size: cover;
   text-align: left;
 }
 
+.about {
+  background: url(../img/about/banner.jpg) repeat center center;
+}
+
 .smartshopper {
-  background: url(../img/smartshopper/honey.jpg) repeat center center;
+  background: url(../img/smartshopper/hands_up.jpg) repeat center center;
 }
 
 .iretail {
@@ -59,12 +69,14 @@ p {
 
 .thesis {
   background: url(../img/thesis/canyon_waterfall_01.jpg) no-repeat center center;
-
 }
-
 
 .yield {
   background: url(../img/yield/yield_texture.png) no-repeat center center;
+}
+
+.blog {
+  background: url(../img/blog/banner.jpg) repeat center center;
 }
 
 .intro-message {
@@ -121,8 +133,9 @@ p {
 
   ul.intro-social-buttons > li {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 0;
+    text-align: center;
   }
 
   ul.intro-social-buttons > li:last-child {
@@ -170,15 +183,17 @@ p {
 }
 
 .banner {
-  padding: 100px 0;
+  padding: 80px 0;
   color: #f8f8f8;
   background: url(../img/banner-bg.jpg) no-repeat center center;
   background-size: cover;
+  text-align: center;
 }
 
 .banner h2 {
   margin: 0;
   font-size: 3em;
+  margin-bottom: 10px;
 }
 
 .banner ul {
@@ -199,10 +214,11 @@ p {
 
 @media (max-width: 767px) {
   .banner h2 {
-    margin: 0;
+    margin: 0 0 10px 0;
     text-shadow: none;
-    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); this could be useful with low contract backgrounds */
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); this could be useful with low contrast backgrounds */
     font-size: 3em;
+
   }
 
   ul.banner-social-buttons > li {
@@ -220,6 +236,7 @@ p {
 footer {
   background-color: #f8f8f8;
   padding: 50px 0;
+  text-align: center;
 }
 
 p.copyright {
@@ -227,12 +244,12 @@ p.copyright {
 }
 
 .btn-lg {
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 .btn-default {
   color: #333;
-  background-color: #dcdcdc;
+  background-color: #fff;
   border-color: transparent;
   margin: 8px 8px 8px 0;
 }
@@ -241,8 +258,8 @@ p.copyright {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #ebebeb;
+  color: #dcdcdc;
+  background-color: #428bca;
   border-color: transparent;
 }
 .btn-default:active,
@@ -271,14 +288,22 @@ fieldset[disabled] .btn-default.active {
 
 
 .btn-resume {
-  border-radius: 50px;
+  border-radius: 0px;
   cursor: pointer;
-  background-color: #68BDBF;
+  background-color: #fff;
   border-color: #fff;
-  opacity: .8;
-  color: #fff;
+  opacity: 1;
+  color: $primary-color;
 }
 
+.btn-launch {
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: $primary-color;
+  border-color: #fff;
+  opacity: .9;
+  color: #fff;
+}
 
 section {
   position: relative;
@@ -340,7 +365,7 @@ section a::after {
 }
 
 .role {
-  background-color: #68BDBF;
+  background-color: #999;
   color: #fff;
   border-radius: 2px;
   padding: 5px;
@@ -351,12 +376,46 @@ a {
   color: #68BDBF;
 }
 
+a.hover {
+  color: orange;
+}
+
 .navbar-nav > li > a {
   padding-top: 10px;
-  padding-bottom: 0px;
   line-height: 20px;
 }
 
-.navbar-collapse {
- padding-top: 15px;
+.navbar-nav {
+  margin-top: 15px;
+  padding-bottom: 0px;
+}
+
+.navbar-default .navbar-brand {
+  color: $primary-body;
+  padding: 15px 15px 8px 15px;
+}
+.profile {
+  align-content: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.post {
+  padding-top: 20px;
+}
+
+.border {
+  border:1px solid #9B9B9B;
+}
+
+.modal-dialog {
+  width: 800px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.cursor {
+  cursor: pointer;
 }
