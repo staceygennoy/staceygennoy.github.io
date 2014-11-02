@@ -20,6 +20,7 @@ body, html {
 body, h1, h2, h3, h4, h5, h6 {
   font-family: $primary-font;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .lead {
@@ -68,11 +69,20 @@ p {
 }
 
 .thesis {
-  background: url(../img/thesis/canyon_waterfall_01.jpg) no-repeat center center;
+  background: url(../img/thesis/fern_trail.jpg) repeat center center;
 }
 
+.myshop {
+  background-color: #702481;
+}
+
+
 .yield {
-  background: url(../img/yield/yield_texture.png) no-repeat center center;
+   background: url(../img/yield/yield_texture_1900.jpg) repeat center center;
+ }
+
+.geode {
+  background: url(../img/geode/bg.png) repeat center center;
 }
 
 .blog {
@@ -382,7 +392,8 @@ a.hover {
 
 .navbar-nav > li > a {
   padding-top: 10px;
-  line-height: 20px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .navbar-nav {
@@ -391,9 +402,21 @@ a.hover {
 }
 
 .navbar-default .navbar-brand {
-  color: $primary-body;
+//  color: $primary-body;
   padding: 15px 15px 8px 15px;
 }
+
+.navbar-collapse {
+  max-height: 340px;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  font-size: 15px;
+}
+
 .profile {
   align-content: center;
   padding: 5px;
@@ -408,13 +431,6 @@ a.hover {
   border:1px solid #9B9B9B;
 }
 
-.modal-dialog {
-  width: 800px;
-}
-
-.modal-body {
-  text-align: center;
-}
 
 .cursor {
   cursor: pointer;
