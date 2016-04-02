@@ -4,10 +4,12 @@ $primary-font: 'Raleway', sans-serif;
 $primary-body: #636363; //gray
 $primary-color: #68BDBF; //teal
 $secondary-color: #428bca; // blue
+$tertiary-color: #595757; // dark gray
+$light: #f8f8f8; //
 
 
 body {
-    background-color: $my-background-color;
+    background-color: $primary-color;
 	padding-top: $my-top-padding;
     color: $primary-body;
 }
@@ -21,6 +23,11 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: $primary-font;
   font-weight: 300;
   line-height: 1.5;
+
+}
+
+h4 {
+  font-size: 1.4em;
 }
 
 .lead {
@@ -30,7 +37,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-header {
-  padding-top: 100px; /* make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-top: 100px; /*  50px of padding so the navbar doesn't overlap content! */
   padding-bottom: 100px;
   color: #fff;
   background-color: $primary-color;
@@ -49,7 +56,7 @@ p {
 /* header backgrounds */
 
 .header {
-  padding-top: 80px; /* make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-top: 80px; /*  50px of padding so the navbar doesn't overlap content! */
   padding-bottom: 80px;
   color: #f8f8f8;
   background-size: cover;
@@ -61,7 +68,7 @@ p {
 }
 
 .smartshopper {
-  background: url(../img/smartshopper/hands_up.jpg) repeat center center;
+  background: url(../img/smartshopper/color.jpg) repeat center center;
 }
 
 .iretail {
@@ -69,7 +76,7 @@ p {
 }
 
 .thesis {
-  background: url(../img/thesis/fern_trail.jpg) repeat center center;
+  background: url(../img/thesis/top_header.jpg) repeat center center;
 }
 
 .myshop {
@@ -87,6 +94,10 @@ p {
 
 .blog {
   background: url(../img/blog/banner.jpg) repeat center center;
+}
+
+.fash {
+  background: url(../img/fash/bg.gif) repeat center center;
 }
 
 .intro-message {
@@ -107,7 +118,7 @@ p {
 }
 
 .sub-header {
-  padding-top: 50px; /* make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-top: 50px; /*  50px of padding so the navbar doesn't overlap content! */
   padding-bottom: 50px;
   color: #f8f8f8;
   background: url(../img/aq_motion_blur_tone.jpg) no-repeat center center;
@@ -194,7 +205,7 @@ p {
 
 .banner {
   padding: 80px 0;
-  color: #f8f8f8;
+  color: $light; //was #f8f8f8f
   background: url(../img/banner-bg.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
@@ -268,8 +279,8 @@ p.copyright {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #dcdcdc;
-  background-color: #428bca;
+  color: #fff; // was #dcdcdc
+  background-color: #337172; // was#428bca;
   border-color: transparent;
 }
 .btn-default:active,
@@ -297,7 +308,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 
-.btn-resume {
+.btn-teal {
   border-radius: 0px;
   cursor: pointer;
   background-color: #fff;
