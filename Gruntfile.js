@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     clean: {
-      src: ['dist/**/*', '!dist/.git', '!**/*README.md']
+      src: ['dist/**/*', '!dist/.git', '!dist/README.md', '!dist/CNAME']
     },
     concat: {
       js : {
