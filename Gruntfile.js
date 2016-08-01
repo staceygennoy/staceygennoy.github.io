@@ -3,7 +3,9 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    clean: ['dist'],
+    clean: {
+      src: ['dist/**/*', '!dist/.git', '!**/*README.md']
+    },
     concat: {
       js : {
         files: {
