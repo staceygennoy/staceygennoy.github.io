@@ -1,6 +1,6 @@
 #Portfolio
 
- ##My personal portfolio project: staceygennoy.com
+##My personal portfolio project: staceygennoy.com
 
 ###Make changes locally on computer in the src directory.
 ###Run grunt to build the project
