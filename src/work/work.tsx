@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
-import styles from './work.module.css';
+import styles from './work.module.scss';
 
 export const Work: FunctionComponent = () => {
-  return <h1>Work</h1>;
+  return <h1 className={styles.header}>Work</h1>;
 };
