@@ -1,17 +1,18 @@
 $my-top-padding: 50px;
 $my-background-color: #DDD;
-$primary-font: 'Raleway', sans-serif;
+$primary-font: 'Muli', sans-serif;
 $primary-body: #636363; //gray
-$primary-color: #68BDBF; //teal
+$primary-color: #428bca; //blue was #68BDBF teal
+$secondary-font: 'Open Sans', sans-serif;
 $secondary-color: #428bca; // blue
 $tertiary-color: #595757; // dark gray
 $light: #f8f8f8; //
 
 
 body {
-    background-color: $primary-color;
+  background-color: $light;
 	padding-top: $my-top-padding;
-    color: $primary-body;
+  color: $primary-body;
 }
 
 body, html {
@@ -19,8 +20,15 @@ body, html {
   width: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $primary-font;
+  font-weight: 300;
+  line-height: 1.5;
+
+}
+
+body {
+  font-family: $secondary-font;
   font-weight: 300;
   line-height: 1.5;
 
@@ -37,21 +45,24 @@ h4 {
 }
 
 .intro-header {
-  padding-top: 100px; /*  50px of padding so the navbar doesn't overlap content! */
-  padding-bottom: 100px;
-  color: #fff;
-  background-color: $primary-color;
-  background: url(../img/aq_motion_blur_tone.png) no-repeat center center;
+  padding-top: 80px; /*  50px of padding so the navbar doesn't overlap content! */
+  padding-bottom: 80px;
+  color: #222;
   background-size: cover;
-  text-align: center;
+  text-align: left;
+  font-size: 45px;
+  font-weight: 800;
 }
 
 
 p {
-  font-size: 16px;
+  font-size: 1.375rem;
 }
 
+.type {
+  text-transform: uppercase;
 
+}
 
 /* header backgrounds */
 
@@ -277,9 +288,9 @@ p.copyright {
 }
 
 .btn-default {
-  color: #333;
+  color: #222;
   background-color: #fff;
-  border-color: transparent;
+  border-color: #222;
   margin: 8px 8px 8px 0;
 }
 .btn-default:hover,
@@ -288,7 +299,7 @@ p.copyright {
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   color: #fff; // was #dcdcdc
-  background-color: #337172; // was#428bca;
+  background-color: $primary-color; // was #337172 was #428bca;
   border-color: transparent;
 }
 .btn-default:active,
@@ -409,6 +420,21 @@ a.hover {
   color: orange;
 }
 
+.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: $primary-color;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: $primary-color;
+    background-color: #fff;
+}
+
 .navbar-nav > li > a {
   padding-top: 10px;
   line-height: 30px;
@@ -416,13 +442,26 @@ a.hover {
 }
 
 .navbar-nav {
-  margin-top: 15px;
   padding-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
 //  color: $primary-body;
   padding: 15px 15px 8px 15px;
+  color: #222;
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #222;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #222;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
 }
 
 .navbar-collapse {
