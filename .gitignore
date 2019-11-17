@@ -29,6 +29,7 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+.vscode
 
 # Komodo
 *.komodoproject
@@ -42,6 +43,7 @@ validation-report.json
 node_modules
 bower_components
 dist
+build
 
 # SASS Cache
 .sass-cache

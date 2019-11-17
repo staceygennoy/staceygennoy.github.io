@@ -1,37 +1,40 @@
 $my-top-padding: 50px;
-$my-background-color: #DDD;
-$primary-font: 'Muli', sans-serif;
+$my-background-color: #ddd;
+$primary-font: "Muli", sans-serif;
 $primary-body: #636363; //gray
 $primary-color: #428bca; //blue was #68BDBF teal
-$secondary-font: 'Open Sans', sans-serif;
+$secondary-font: "Open Sans", sans-serif;
 $secondary-color: #428bca; // blue
 $tertiary-color: #595757; // dark gray
 $light: #f8f8f8; //
 
-
 body {
   background-color: $light;
-	padding-top: $my-top-padding;
+  padding-top: $my-top-padding;
   color: $primary-body;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $primary-font;
   font-weight: 300;
   line-height: 1.5;
-
 }
 
 body {
   font-family: $secondary-font;
   font-weight: 300;
   line-height: 1.5;
-
 }
 
 h4 {
@@ -54,21 +57,19 @@ h4 {
   font-weight: 800;
 }
 
-
 p {
   font-size: 1.375rem;
 }
 
 .type {
   text-transform: uppercase;
-
 }
 
 /* header backgrounds */
 
 .header {
-  padding-top: 80px; /*  50px of padding so the navbar doesn't overlap content! */
-  padding-bottom: 80px;
+  padding-top: 20px; /*  Was 80px, ? -> 50px of padding so the navbar doesn't overlap content! */
+  padding-bottom: 20px;
   color: #f8f8f8;
   background-size: cover;
   text-align: left;
@@ -94,10 +95,9 @@ p {
   background-color: #702481;
 }
 
-
 .yield {
-   background: url(../img/yield/yield_texture_1900.jpg) repeat center center;
- }
+  background: url(../img/yield/yield_texture_1900.jpg) repeat center center;
+}
 
 .geode {
   background: url(../img/geode/bg.png) repeat center center;
@@ -133,7 +133,6 @@ p {
 .intro-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
-
 }
 
 .sub-header {
@@ -159,7 +158,6 @@ p {
 .sub-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
-
 }
 
 @media (max-width: 767px) {
@@ -258,7 +256,6 @@ p {
     text-shadow: none;
     /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); this could be useful with low contrast backgrounds */
     font-size: 3em;
-
   }
 
   ul.banner-social-buttons > li {
@@ -271,7 +268,6 @@ p {
     margin-bottom: 0;
   }
 }
-
 
 footer {
   background-color: #f8f8f8;
@@ -326,7 +322,6 @@ fieldset[disabled] .btn-default.active {
   border-color: transparent;
 }
 
-
 .btn-teal {
   border-radius: 0px;
   cursor: pointer;
@@ -341,7 +336,7 @@ fieldset[disabled] .btn-default.active {
   cursor: pointer;
   background-color: $primary-color;
   border-color: #fff;
-  opacity: .9;
+  opacity: 0.9;
   color: #fff;
 }
 
@@ -390,8 +385,8 @@ section a::after {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: rgba(52,73,94,0.2);
-  content: '';
+  background-color: rgba(52, 73, 94, 0.2);
+  content: "";
   -webkit-transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   -webkit-transform: translateY(95%);
@@ -409,11 +404,10 @@ section a::after {
   color: #fff;
   border-radius: 2px;
   padding: 5px;
-
 }
 
 a {
-  color: #68BDBF;
+  color: #68bdbf;
 }
 
 a.hover {
@@ -421,18 +415,20 @@ a.hover {
 }
 
 .navbar-default {
-    background-color: #fff;
-    border-color: #e7e7e7;
+  background-color: #fff;
+  border-color: #e7e7e7;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: $primary-color;
-    background-color: #fff;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $primary-color;
+  background-color: #fff;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: $primary-color;
-    background-color: #fff;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: $primary-color;
+  background-color: #fff;
 }
 
 .navbar-nav > li > a {
@@ -445,23 +441,28 @@ a.hover {
   padding-bottom: 0px;
 }
 
+.navbar-nav.navbar-nav-work .nav-work,
+.navbar-nav.navbar-nav-about .nav-about {
+  font-weight: 600;
+}
+
 .navbar-default .navbar-brand {
-//  color: $primary-body;
+  //  color: $primary-body;
   padding: 15px 15px 8px 15px;
   color: #222;
   background-color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #222;
+.navbar-default .navbar-nav > li > a {
+  color: #222;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #222;
+  background-color: #222;
 }
 
 .navbar-default .navbar-toggle {
-    border: none;
+  border: none;
 }
 
 .navbar-collapse {
@@ -471,7 +472,7 @@ a.hover {
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: none;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   font-size: 15px;
 }
 
@@ -486,9 +487,8 @@ a.hover {
 }
 
 .border {
-  border:1px solid #9B9B9B;
+  border: 1px solid #9b9b9b;
 }
-
 
 .cursor {
   cursor: pointer;
