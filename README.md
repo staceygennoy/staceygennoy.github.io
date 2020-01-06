@@ -9,8 +9,7 @@
    1. Use terminal to navigate to the root (portfolio folder, where is everything is) directory.
    1. Make sure on the "development" branch
    1. Terminal: Git add, git commit, git push (which pushes all files to the development branch), possibly pull if making updates to readme.
-1. Use terminal to navigate to the dist directory
-1. Make sure on the "master" branch
+1. Use terminal to navigate to the dist directory (probably now on the "master" branch)
 1. Terminal: Git add, git commit, git push (which pushes dist files to GitHub live)
 
 (Command K, then V to show preview (not command V))
